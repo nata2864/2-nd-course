@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мини-сайт с играми</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">       
+            <div class="header__content top">
+                <h1 class=" heading top__heading">Добро пожаловать <br> на мой сайт мини-игр</h1>
+                <p class=" description top__description">Тебе предстоит пройти несколько увлекательных игр. <br>
+                Если готов,нажимай <span>"Поехали!" и приступай.</span></p>
+                <button class="button button_hover">Поехали!</button> 
+            </div>
+            <div class="header__image">
+             <img src="img/bigstartop.png" width="530" alt="img stars">  
+            </div>
+    </header>  
+    <div class="navigation"></div>
+    <main class="page-main">     
+        <section class="game-menu">
+            <div class="game-menu__content">
+                <h2 class="heading"> Об играх</h2>
+                <p class="description" >В моей коллекции представлено 6 игр на разные темы. <br>
+                Игры несложные — в них может поиграть каждый. <br>
+                Все игры доступны для пользования.</p>
+            </div>
+            <div class="game-menu__cards">
+                <ul class="card-list">
+                    <li class="card ">
+                        <a href="#" class="card__link">
+                        <div class="card__cover"><img src="img/game_1.jpg" alt="Обложка игры №1"></div>
+                        <div class="card__content number-game"> 
+                            <button class="number-game__button">Игра №1</button>
+                            <p class="number-game__name">Угадай число
+                            </p>
+                        </div>
+                        </a>
+                    </li>
+                    <li class="card"><a href="#" class="card__link">
+                        <div class="card__cover"><img src="img/game_2.jpg" alt="Обложка игры №2"></div>
+                        <div class="card__content number-game"> 
+                            <button class="number-game__button">Игра №2</button>
+                            <p class="number-game__name">Простая арифметика
+                            </p>
+                        </div> 
+
+                    </a>
+                                         
+                    </li>
+                    <li class="card"><a href="#" class="card__link">
+                        <div class="card__cover"><img src="img/game_3.png" alt="Обложка игры №3"></div>
+                        <div class="card__content number-game"> 
+                            <button class="number-game__button">Игра №3</button>
+                            <p class="number-game__name">Переверни текст
+                            </p>
+                        </div> 
+
+                    </a>
+                                            
+                    </li>
+                    <li class="card"><a href="#" class="card__link">
+                        <div class="card__cover"><img src="img/game_4.jpg" alt="Обложка игры №4"></div>
+                        <div class="card__content number-game"> 
+                            <button class="number-game__button">Игра №4</button>
+                            <p class="number-game__name">Камень, <br> ножницы, <br>бумага
+                            </p>
+                        </div>  
+
+                    </a>
+                                            
+                    </li>
+                    <li class="card"><a href="#" class="card__link">
+                        <div class="card__cover"><img src="img/game_5.jpg" alt="Обложка игры №5"></div>
+                        <div class="card__content number-game"> 
+                            <button class="number-game__button">Игра №5</button>
+                            <p class="number-game__name">Простая викторина
+                            </p>
+                        </div> 
+
+                    </a>
+                                            
+                    </li>
+                    <li class="card"><a href="#" class="card__link">
+
+                        <div class="card__cover"><img src="img/game_6.png" alt="Обложка игры №6"></div>
+                        <div class="card__content number-game"> 
+                            <button class="number-game__button">Игра №6</button>
+                            <p class="number-game__name">Генератор случайных цветов
+                            </p>
+                        </div>
+                    </a>
+                                              
+                    </li>
+                </ul>
+            </div>          
+        </section>
+        
+        <section class="game-box">
+           <h2 class="heading"> Мини-игры</h2>
+           <ul class="game-list"></ul>
+        </section> 
+    </main>
+    <footer class="page-footer">
+        <p class="page-footer__text">Все права защищены</p>
+    </footer>
+</body>
+</html>
