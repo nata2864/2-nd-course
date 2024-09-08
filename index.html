@@ -12,11 +12,11 @@
 <body>
     <header class="top">       
             <div class="top__content ">
-                <h1 class=" heading  ">Добро пожаловать <br> на мой сайт мини-игр</h1>
-                <p class=" description ">Тебе предстоит пройти несколько увлекательных игр. <br>
+                <h1 class=" heading ">Добро пожаловать <br> на мой сайт мини-игр</h1>
+                <p class=" description ">Тебе предстоит пройти несколько увлекательных игр. 
                 Если готов,нажимай <span>"Поехали!" и приступай.</span></p>
                 <a href="#cardsblock">
-                    <button class="button ">Поехали!</button> 
+                    <button class="button button_mob ">Поехали!</button> 
                 </a>
                 
             </div>
@@ -35,7 +35,11 @@
                     <li class="card">
                         <a href="#game1" class="card__link">
                         <div class="card__cover">
-                            <img src="img/game_1.jpg" alt="Обложка игры №1"></div>
+                  
+                               
+                                <img srcset="img/game_1.jpg" alt="Обложка игры №1">
+                       
+                            </div>
                         <div class="card__content number-game"> 
                             <button class="number-game__button">Игра №1</button>
                             <p class="number-game__name">Угадай число
@@ -101,48 +105,81 @@
                 </ul>
             </div>          
         </section>    
-        <section class="game-box">
+        <section class="game-box" id="gameblock">
            <h2 class="heading"> Мини-игры</h2> 
            <ul class="game-list">
             <li class="card-game " id="game1">     
-                <div class="card-game__cover"><img src="img/game_1_big.jpg" alt="Обложка игры №1"></div>
+                <div class="card-game__cover">
+                    
+                    <picture>
+                        <source media="(max-width: 375px)" srcset="img/game_1_mob.jpg">
+                        <img src="img/game_1_big.jpg" alt="Обложка игры №1">
+                    </picture>   
+                    
+                    
+                    
+                   </div>
                 <div class="card-game__content number-game">            
-                    <p class="number-game__name">Угадай число
+                    <p class="number-game__name number-game__name_mob">Угадай число
                     </p><button class="button ">Играть!</button>
                 </div>            
             </li>
             <li class="card-game" id="game2">
-                <div class="card-game__cover"><img src="img/game_2_big (1).jpg" alt="Обложка игры №2"></div>
-                <div class="card-game__content number-game">                    
-                    <p class="number-game__name">Простая арифметика
+                <div class="card-game__cover"> 
+                    <picture>
+                    <source media="(max-width: 375px)" srcset="img/game_2_mob.jpg">
+                    <img src="img/game_2_big (1).jpg" alt="Обложка игры №2">
+                </picture> 
+                    </div>
+                    <div class="card-game__content number-game">
+                    <p class="number-game__name number-game__name_mob">Простая арифметика
                     </p><button class="button ">Играть!</button>
                 </div>                                
             </li>
             <li class="card-game" id="game3">
-                <div class="card-game__cover"><img src="img/game_3_big.jpg" alt="Обложка игры №3"></div>
+                <div class="card-game__cover"> <picture>
+                    <source media="(max-width: 375px)" srcset="img/game_3_mob.jpg">
+                    <img src="img/game_3_big.jpg" alt="Обложка игры №1">
+                </picture>   
+            </div>
                 <div class="card-game__content number-game">                    
-                    <p class="number-game__name">Переверни текст
+                    <p class="number-game__name number-game__name_mob">Переверни текст
                     </p><button class="button ">Играть!</button>
                 </div>                                
             </li>
             <li class="card-game" id="game4">
-                <div class="card-game__cover"><img src="img/game_4_big.jpg" alt="Обложка игры №4"></div>
+                <div class="card-game__cover">
+                    <picture>
+                        <source media="(max-width: 375px)" srcset="img/game_4_mob.jpg">
+                        <img src="img/game_4_big.jpg" alt="Обложка игры №1">
+                    </picture>   
+                </div>
                 <div class="card-game__content number-game">         
-                    <p class="number-game__name">Камень, <br> ножницы, <br>бумага
+                    <p class="number-game__name number-game__name_mob">Камень, <br> ножницы, <br>бумага
                     </p><button class="button ">Играть!</button>
                 </div>                               
             </li>
             <li class="card-game" id="game5">
-                <div class="card-game__cover"><img src="img/game_5_big.jpg" alt="Обложка игры №5"></div>
+                <div class="card-game__cover">
+                    <picture>
+                        <source media="(max-width: 375px)" srcset="img/game_5_mob.jpg">
+                        <img src="img/game_5_big.jpg" alt="Обложка игры №1">
+                    </picture>   
+                </div>
                 <div class="card-game__content number-game">         
-                    <p class="number-game__name">Простая викторина
+                    <p class="number-game__name number-game__name_mob">Простая викторина
                     </p><button class="button ">Играть!</button>
                 </div>                        
             </li>
             <li class="card-game" id="game6">
-                <div class="card-game__cover"><img src="img/game_6_big.png" alt="Обложка игры №6"></div>
+                <div class="card-game__cover">
+                    <picture>
+                        <source media="(max-width: 375px)" srcset="img/game_6_mob.jpg">
+                        <img src="img/game_6_big.png" alt="Обложка игры №1">
+                    </picture>   
+                </div>
                 <div class="card-game__content number-game">    
-                    <p class="number-game__name">Генератор случайных цветов
+                    <p class="number-game__name number-game__name_mob">Генератор случайных цветов
                     </p><button class="button ">Играть!</button>
                 </div>                         
             </li>

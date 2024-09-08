@@ -1,19 +1,32 @@
+
 @import'vars';
+@import'headers';
+
+
 
 * {
    margin: 0;
    padding: 0;
  }
  
+
+
  body {
+   min-height: 100%;
    font-family: "Montserrat", sans-serif;
+  
+ }
+
+ html{
+  font-size:$fondSize ;
+  height: 100vh;
  }
  
  
  .heading {
    font-style: bold;
    font-weight: $weightHeadingText;
-   font-size: $sizeHeadingText;
+   font-size: $fondHeadingSize;
    line-height: 78px;
    color: $colorHeadingText;
  }
@@ -22,39 +35,44 @@
    margin-top: $topMarginDescriptionText;
    color: $colorHeadingText;
    font-weight: $weightDescriptionText;
-   font-size: $sizeDescriptionText;
+   font-size: $fondTextSize;
    line-height: 32px;
  }
 
  span {
-  font-weight: 600;
+  font-size: $fondTextSize;
+  font-weight: $weightSemiboldText;
 }
  
  .top {
-  //  height: 710px;
-   background: url('img/Фон_top.jpg');
+  //  
+
+   background: url('img/Обложка_top.png');
+   background-color: #E1FF8F;
    background-size: cover;
    background-repeat: no-repeat;
    padding-top: 196px;
    padding-left:$leftMarginsize ;
    padding-bottom: 156px;
+     .heading{
+    color: $colorText;
+     } 
      .description{
        color: $colorText; 
+       margin-bottom: 48px;
       }
-    .heading{
-      color: $colorText;
-      } 
+    
   }
 
  .button {
-  margin-top: 48px;
+  // margin-top: 48px;
   background-color: $backgroundColorSections;
   padding: 16px 28px;
   border-radius: $buttonBorderRadius;
   transition-duration: 0.4s;
   color: $colorHeadingText;
-  font-weight: 600;
-  font-size: $sizeDescriptionText;
+  font-weight: $weightSemiboldText;
+  font-size: $fondSize;
   width: $buttonSize;
 }
 
@@ -73,7 +91,8 @@
    padding-top: $topMarginSection;
    padding-left: $leftMarginsize;
    padding-right:$rightMarginsize;
-   background: url('img/Фон_section1.jpg');
+   background: url('img/Обложка_section1.png');
+   background-color: $backgroundColorSections;
    background-size: cover;
    background-repeat: no-repeat;
 
@@ -137,7 +156,7 @@
  &__name {
    margin-top: 16px;
    font-weight: 700;
-   font-size: 32px;
+   font-size:$fondHeadingCardsSize;
    line-height: 39px;
  }
 }
@@ -147,7 +166,8 @@
    padding-left: $leftMarginsize;
    padding-right:$rightMarginsize;
    padding-bottom: 144px;
-   background: url('img/Фон_section2.jpg');
+   background: url('img/Обложка_section2.png');
+  background-color: $backgroundColorSections;
    background-size: cover;
    background-repeat: no-repeat;
  }
@@ -179,9 +199,16 @@
    padding-left: 578px;
    background-color: #BDED35;
    &__text {
-    font-size: $sizeDescriptionText;
-    font-weight: 600;
+    font-size: $fondTextSize;
+    font-weight: $weightSemiboldText;
   }
  }
+
+
+
+ @import 'mobile';
+
+
+
  
  /*# sourceMappingURL=style.css.map */

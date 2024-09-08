@@ -5,13 +5,19 @@
 }
 
 body {
+  min-height: 100%;
   font-family: "Montserrat", sans-serif;
+}
+
+html {
+  font-size: 16px;
+  height: 100vh;
 }
 
 .heading {
   font-style: bold;
   font-weight: 700;
-  font-size: 64px;
+  font-size: 4rem;
   line-height: 78px;
   color: #FFFFFF;
 }
@@ -20,38 +26,40 @@ body {
   margin-top: 24px;
   color: #FFFFFF;
   font-weight: 400;
-  font-size: 24px;
+  font-size: 1.5rem;
   line-height: 32px;
 }
 
 span {
+  font-size: 1.5rem;
   font-weight: 600;
 }
 
 .top {
-  background: url("img/Фон_top.jpg");
+  background: url("img/Обложка_top.png");
+  background-color: #E1FF8F;
   background-size: cover;
   background-repeat: no-repeat;
   padding-top: 196px;
   padding-left: 120px;
   padding-bottom: 156px;
 }
-.top .description {
-  color: #202027;
-}
 .top .heading {
   color: #202027;
 }
+.top .description {
+  color: #202027;
+  margin-bottom: 48px;
+}
 
 .button {
-  margin-top: 48px;
   background-color: #202027;
   padding: 16px 28px;
   border-radius: 60px;
   transition-duration: 0.4s;
   color: #FFFFFF;
   font-weight: 600;
-  font-size: 24px;
+  font-size: 16px;
   width: 247px;
 }
 
@@ -70,7 +78,8 @@ span {
   padding-top: 94px;
   padding-left: 120px;
   padding-right: 120px;
-  background: url("img/Фон_section1.jpg");
+  background: url("img/Обложка_section1.png");
+  background-color: #202027;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -119,7 +128,7 @@ span {
 .number-game__name {
   margin-top: 16px;
   font-weight: 700;
-  font-size: 32px;
+  font-size: 2rem;
   line-height: 39px;
 }
 
@@ -128,7 +137,8 @@ span {
   padding-left: 120px;
   padding-right: 120px;
   padding-bottom: 144px;
-  background: url("img/Фон_section2.jpg");
+  background: url("img/Обложка_section2.png");
+  background-color: #202027;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -160,8 +170,45 @@ span {
   background-color: #BDED35;
 }
 .page-footer__text {
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 600;
 }
 
+@media (max-width: 375px) {
+  .heading {
+    font-size: 2.5rem;
+    line-height: 48px;
+    text-align: center;
+  }
+  .description {
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+  }
+  span {
+    font-size: 16px;
+  }
+  .top {
+    padding: 147px 17px 131px 17px;
+    background: url("img/Обложка_top_mob.png");
+    background-color: #E1FF8F;
+    background-repeat: no-repeat;
+  }
+  .top .description {
+    margin-bottom: 36px;
+  }
+  .top__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .button_mob {
+    transition-duration: 0.4s;
+    font-weight: 600;
+    font-size: 16px;
+  }
+  .game-menu {
+    display: none;
+  }
+}
 /*# sourceMappingURL=style.css.map */
