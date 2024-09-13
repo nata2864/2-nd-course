@@ -1,0 +1,18 @@
+@import'vars';
+@import'headers';
+
+@media (max-width: 768px){
+  .center{
+    padding-left: calc(50% - 200px);
+    padding-right: calc(50% - 200px);
+   }
+ }
+
+@media (max-width: 376px)
+
+{
+  .center{
+    padding-left: calc(50% - 170px);
+    padding-right: calc(50% - 170px);
+   }
+}
