@@ -7,9 +7,9 @@
    padding: 0;
  }
 
- * {
-  box-sizing: border-box;
-  }
+//  * {
+//   box-sizing: border-box;
+//   }
  
  body {
    min-height: 100%;
@@ -97,6 +97,7 @@
   }
 
  .game-menu {
+  box-sizing: border-box;
    padding-top: $topMarginSection;
    background: url('img/Обложка_section1.png');
    background-color: $backgroundColorSections;
@@ -116,6 +117,7 @@
  }
  
  .card {
+  box-sizing: border-box;
    background-color:$backgroundCardsColor;
    border-radius: 30px;
    overflow: hidden;
@@ -166,12 +168,14 @@
 }
  
  .game-box {
+  // box-sizing: border-box;
    padding-top: $topMarginSection;
    padding-bottom: 144px;
    background: url('img/Обложка_section2.png');
   background-color: $backgroundColorSections;
    background-size: cover;
    background-repeat: no-repeat;
+  
  }
 
  .game-list{
@@ -180,16 +184,21 @@
   flex-direction: column;
   gap: $gap;
  }
+
  
  .card-game{
+  box-sizing: border-box;
   height: 500px;
   background-color:$backgroundCardsColor;
    border-radius: 30px;
    overflow: hidden;
    display: flex;
    justify-content: space-between;
+   width: 100%;
+   max-width: 1200px;
    
    &__cover {
+    width: 50%;
     overflow: hidden;
 
     img {
@@ -200,9 +209,32 @@
 }
 
   &__content{
-    padding: 48px 48px 0 48px;
+    box-sizing: border-box;
+    width: 50%;
+    padding-left: 48px;
+    padding-top: 48px;
   }
 }
+
+.reverse {
+  flex-direction: row-reverse;
+}
+
+.game{
+  &__name{
+    margin-bottom: 24px;
+    width: $weightHeadingText;
+    font-size:$fondHeadingGameSize ;
+  }
+  
+  &__description{
+    margin-bottom: 36px;
+    width: $weightDescriptionText;
+    font-size: $fondTextSize;
+  }
+
+}
+
 
 .page-footer{
   padding-bottom: 60px;
