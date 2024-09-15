@@ -4,10 +4,6 @@
   padding: 0;
 }
 
-* {
-  box-sizing: border-box;
-}
-
 body {
   min-height: 100%;
   font-family: "Montserrat", sans-serif;
@@ -89,6 +85,7 @@ span {
 }
 
 .game-menu {
+  box-sizing: border-box;
   padding-top: 94px;
   background: url("img/Обложка_section1.png");
   background-color: #202027;
@@ -107,6 +104,7 @@ span {
 }
 
 .card {
+  box-sizing: border-box;
   background-color: #FFFFFF;
   border-radius: 30px;
   overflow: hidden;
@@ -166,14 +164,18 @@ span {
 }
 
 .card-game {
+  box-sizing: border-box;
   height: 500px;
   background-color: #FFFFFF;
   border-radius: 30px;
   overflow: hidden;
   display: flex;
   justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
 }
 .card-game__cover {
+  width: 50%;
   overflow: hidden;
 }
 .card-game__cover img {
@@ -183,7 +185,25 @@ span {
      object-fit: cover;
 }
 .card-game__content {
-  padding: 48px 48px 0 48px;
+  box-sizing: border-box;
+  width: 50%;
+  padding-left: 48px;
+  padding-top: 48px;
+}
+
+.reverse {
+  flex-direction: row-reverse;
+}
+
+.game__name {
+  margin-bottom: 24px;
+  width: 700;
+  font-size: 3rem;
+}
+.game__description {
+  margin-bottom: 36px;
+  width: 400;
+  font-size: 1.5rem;
 }
 
 .page-footer {
