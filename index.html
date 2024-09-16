@@ -100,97 +100,99 @@
             </div>          
         </section>    
         <section class="game-box center" id="gameblock">
-            <h2 class="heading"> Мини-игры</h2> 
+            <h2 class="heading">Мини-игры</h2> 
             <ul class="game-list">
-             <li class="card-game reverse" id="game1">
-                <div class="card-game__cover">                    
-                    <picture>
-                        <source media="(max-width: 375px)" srcset="img/game_1_mob.jpg">
-                        <img src="img/game_1_big.jpg" alt="Обложка игры №1">
-                    </picture>                                           
-               </div> 
-                 <div class="card-game__content game">            
-                     <h3 class="game__name">Угадай число
-                     </h3>
-                     <p class="game__description">Попробуй угадать случайное число от 1 до 100.</p>
-                     <a class="button ">Играть!</a>
-                 </div>      
-                                           
-             </li>
-             <li class="card-game" id="game2">
-                 <div class="card-game__cover"> 
-                     <picture>
-                     <source media="(max-width: 375px)" srcset="img/game_2_mob.jpg">
-                     <img src="img/game_2_big.jpg" alt="Обложка игры №2">
-                 </picture> 
-                     </div>
-                     <div class="card-game__content game">
-                     <h3 class="game__name">Простая арифметика
-                     </h3>
-                     <p class="game__description">
-                         Попробуй решить простые арифметические задачи.
-                     </p>
-                     <a class="button ">Играть!</a>
-                 </div>                                
-             </li>
-             <li class="card-game  reverse" id="game3">
-                <div class="card-game__cover"> <picture>
-                    <source media="(max-width: 375px)" srcset="img/game_3_mob.jpg">
-                    <img src="img/game_3_big.jpg" alt="Обложка игры №3">
-                </picture>   
-            </div>
-                 <div class="card-game__content game">                    
-                     <h3 class="game__name">Переверни текст
-                     </h3>
-                     <p class="game__description">Попробуй ввести текст, который будет перевернут.</p>
-                     <a class="button ">Играть!</a>
-                 </div>
-                                                           
-             </li>
-             <li class="card-game" id="game4">
-                 <div class="card-game__cover">
-                     <picture>
-                         <source media="(max-width: 375px)" srcset="img/game_4_mob.jpg">
-                         <img src="img/game_4_big.jpg" alt="Обложка игры №4">
-                     </picture>   
-                 </div>
-                 <div class="card-game__content game">         
-                     <h3 class="game__name">Камень, <br> ножницы, <br>бумага
-                     </h3>
-                     <p class="game__description">Отвечай на вопросы викторины с вариантами ответов.</p>
-                     <a class="button ">Играть!</a>
-                 </div>                               
-             </li>
-             <li class="card-game  reverse" id="game5">
-                <div class="card-game__cover"> <picture>
-                    <source media="(max-width: 375px)" srcset="img/game_5_mob.jpg">
-                    <img src="img/game_5_big.jpg" alt="Обложка игры №5">
-                </picture>   
-            </div> 
-                 <div class="card-game__content game">                    
-                     <h3 class="game__name">Простая викторина
-                     </h3>
-                     <p class="game__description">Сыграй в популярную игру против компьютера.</p>
-                     <a class="button ">Играть!</a>
-                 </div>
-                                                        
-             </li>
-             <li class="card-game" id="game6">
-                <div class="card-game__cover">
-                    <picture>
-                        <source media="(max-width: 375px)" srcset="img/game_6_mob">
-                        <img src="img/game_6_big.jpg" alt="Обложка игры №6">
-                    </picture>   
-                </div>
-                <div class="card-game__content game">         
-                    <h3 class="game__name">Генератор случайных цветов
-                    </h3>
-                    <p class="game__description">Игра, в которой при клике на кнопку <br>фон страницы меняется на случайный.</p>
-                    <a class="button ">Играть!</a>
-                </div>                               
-            </li>      
-         </ul>
-         </section> 
+                <li class="card-game card-game_number" id="game1">
+                    <div class="card-game__cover">
+                      <picture>
+                      <source media="(max-width: 767px)" srcset='img/game_1_mob.jpg'>
+                      <source media="(min-width: 768px)" srcset='img/game_1_big.jpg'>
+                      <img src='img/game_1_big.jpg' alt="photo">
+                      </picture>
+                    </div>
+                    <div class="card-game__content game">            
+                        <h3 class="game__name">Угадай число</h3>
+                        <p class="game__description">Попробуй угадать случайное число от 1 до 100.</p>
+                        <a class="button button_mob">Играть!</a>
+                    </div>      
+                </li>
+                <li class="card-game card-game_math" id="game2">
+                    <div class="card-game__cover">
+                        <picture>
+                            <source media="(max-width: 767px)" srcset='img/game_2_mob.jpg'>
+                            <source media="(min-width: 768px)" srcset='img/game_2_big.jpg'>
+                            <img src='img/game_2_big.jpg' alt="photo">
+                            </picture>
+                    </div>
+                    <div class="card-game__content game">
+                        <h3 class="game__name">Простая арифметика</h3>
+                        <p class="game__description">Попробуй решить простые арифметические задачи.</p>
+                        <a class="button button_mob">Играть!</a>
+                    </div>                                
+                </li>
+                <li class="card-game card-game_text" id="game3">
+                    <div class="card-game__cover">
+                        <picture>
+                            <source media="(max-width: 767px)" srcset='img/game_3_mob.jpg'>
+                            <source media="(min-width: 768px)" srcset='img/game_3_big.jpg'>
+                            <img src='img/game_3_big.jpg' alt="photo">
+                            </picture>
+                    </div>
+                    <div class="card-game__content game">                    
+                        <h3 class="game__name">Переверни текст</h3>
+                        <p class="game__description">Попробуй ввести текст, который будет перевернут.</p>
+                        <a class="button button_mob">Играть!</a>
+                    </div>
+                </li>
+                <li class="card-game card-game_quiz" id="game4">
+                    <div class="card-game__cover">
+                        <picture>
+                            <source media="(max-width: 767px)" srcset='img/game_4_mob.jpg'>
+                            <source media="(min-width: 768px)" srcset='img/game_4_big.jpg'>
+                            <img src='img/game_4_big.jpg' alt="photo">
+                            </picture>
+                    </div>
+                    <div class="card-game__content game">                    
+                        <h3 class="game__name">Викторина</h3>
+                        <p class="game__description">Отвечай на вопросы викторины с вариантами ответов..</p>
+                        <a class="button button_mob">Играть!</a>
+                    </div>                        
+                </li>
+                <li class="card-game card-game_rock" id="game5">
+                    <div class="card-game__cover">
+                        <picture>
+                            <source media="(max-width: 767px)" srcset='img/game_5_mob.jpg'>
+                            <source media="(min-width: 768px)" srcset='img/game_5_big.jpg'>
+                            <img src='img/game_5_big.jpg' alt="photo">
+                            </picture>
+                    </div>
+                    <div class="card-game__content game">         
+                        <h3 class="game__name">Камень, ножницы, бумага</h3>
+                        <p class="game__description">Сыграй в популярную игру против компьютера</p>
+                        <a class="button button_mob">Играть!</a>
+                    </div>                               
+                </li>
+              
+                <li class="card-game card-game_color" id="game6">
+                    <div class="card-game__cover">
+                        <picture>
+                            <source media="(max-width: 767px)" srcset='img/game_6_mob.jpg'>
+                            <source media="(min-width: 768px)" srcset='img/game_6_big.jpg'>
+                            <img src='img/game_6_big.jpg' alt="photo">
+                            </picture>
+                    </div>
+                    <div class="card-game__content ">
+                        <div class="game">
+                            <h3 class="game__name">Генератор случайных цветов</h3>
+                            <p class="game__description">Игра, в которой при клике на кнопку фон страницы меняется на случайный.</p>
+                        </div>        
+                        
+                        <a class="button button_mob">Играть!</a>
+                    </div>                               
+                </li>
+            </ul>
+        </section>
+        
      </main>
     <footer class="page-footer">
         <p class="page-footer__text">Все права защищены</p>

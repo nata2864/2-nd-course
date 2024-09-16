@@ -5,21 +5,15 @@
           padding-left: calc(50% - 350px);
           padding-right: calc(50% - 350px);
          }
+
+         .game-menu{
+          display: none;
+        }
       
         .heading {
-          font-size: $fondMobHeadingSize;
-          line-height: 48px;
+          font-size:$fondHeadingGameSize;
+          line-height: 60px;
           text-align: center;
-        }
-      
-        .description {
-          font-size: $fondSize;
-          line-height: 20px;
-          text-align: center;
-        }
-      
-        span {
-          font-size: $fondSize;
         }
       
           .top {
@@ -48,18 +42,23 @@
         font-weight: $weightSemiboldText;
         font-size: $fondSize; 
       }
-      
-      .game-menu{
-        display: none;
+
+      .card-game__cover{
+        border-radius: 30px;
       }
       
-      .page-footer{
-        padding-bottom: 40px;
-        padding-top: 40px;
+      .game{
+        &__name{
+          font-size:$fondHeadingCardsSize ;
+        }
+        
+        &__description{
+          margin-bottom: 32px;
+          font-size: $fondSize;
+        }
       
-      &__text{
-        font-size: $fondSize;
       }
-      }
+   
       
 }
+       
