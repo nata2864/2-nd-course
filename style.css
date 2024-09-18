@@ -64,7 +64,7 @@ span {
 .button:hover {
   background-color: #FFFFFF;
   color: #202027;
-  border: 1px solid black;
+  outline: thin solid black;
 }
 .button:active {
   background-color: gray;
