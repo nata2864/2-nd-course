@@ -8,7 +8,7 @@ getMinNumber(9,6);
 
 const getEvenNumber = n  => {
 
-    return n % 2 == 0 ? console.log('Число четное') : console.log('Число нечетное')
+    return n % 2 == 0 ? 'Число четное' : 'Число нечетное'
 
 }
 
@@ -47,27 +47,28 @@ const checkNumber = number => {
 
 checkNumber(prompt('Введите число'));
 
+
+function getArea() {
+    return Math.PI * this.radius ** 2;
+}
+
+function getPerimeter() {
+    return 2 * Math.PI * this.radius;
+}
+
 let circle1 = {
     radius: 3,
-    getArea (){
-        return (this.radius** 2)* 3.14
-    },
-    getPerimeter (){
-        return this.radius* 2 * 3.14
-    }
-}
+    getArea,
+    getPerimeter 
+ }
 
 
 
 
 let circle2 = {
     radius: 8,
-    getArea (){
-        return (this.radius** 2)* 3.14
-    },
-    getPerimeter (){
-        return this.radius* 2 * 3.14
-    }
+    getArea ,
+    getPerimeter 
 }
 
 circle1.getArea();
