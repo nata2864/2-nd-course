@@ -107,13 +107,13 @@
                       <picture>
                       <source media="(max-width: 767px)" srcset='img/game_1_mob.jpg'>
                       <source media="(min-width: 768px)" srcset='img/game_1_big.jpg'>
-                      <img src='img/game_1_big.jpg' alt="photo">
+                      <img src='img/game_1_big.jpg' alt="Обложка для игры №1">
                       </picture>
                     </div>
                     <div class="card-game__content game">            
                         <h3 class="game__name">Угадай число</h3>
                         <p class="game__description">Попробуй угадать случайное число от 1 до 100.</p>
-                        <a class="button button_mob">Играть!</a>
+                        <a onclick="guessNumber(getRandomInteger(1,100))" class="button button_mob">Играть!</a>
                     </div>      
                 </li>
                 <li class="card-game card-game_math" id="game2">
@@ -121,7 +121,7 @@
                         <picture>
                             <source media="(max-width: 767px)" srcset='img/game_2_mob.jpg'>
                             <source media="(min-width: 768px)" srcset='img/game_2_big.jpg'>
-                            <img src='img/game_2_big.jpg' alt="photo">
+                            <img src='img/game_2_big.jpg' alt="Обложка для игры №2">
                             </picture>
                     </div>
                     <div class="card-game__content game">
@@ -135,7 +135,7 @@
                         <picture>
                             <source media="(max-width: 767px)" srcset='img/game_3_mob.jpg'>
                             <source media="(min-width: 768px)" srcset='img/game_3_big.jpg'>
-                            <img src='img/game_3_big.jpg' alt="photo">
+                            <img src='img/game_3_big.jpg' alt="Обложка для игры №3">
                             </picture>
                     </div>
                     <div class="card-game__content game">                    
@@ -149,7 +149,7 @@
                         <picture>
                             <source media="(max-width: 767px)" srcset='img/game_4_mob.jpg'>
                             <source media="(min-width: 768px)" srcset='img/game_4_big.jpg'>
-                            <img src='img/game_4_big.jpg' alt="photo">
+                            <img src='img/game_4_big.jpg' alt="Обложка для игры №4">
                             </picture>
                     </div>
                     <div class="card-game__content game">                    
@@ -163,7 +163,7 @@
                         <picture>
                             <source media="(max-width: 767px)" srcset='img/game_5_mob.jpg'>
                             <source media="(min-width: 768px)" srcset='img/game_5_big.jpg'>
-                            <img src='img/game_5_big.jpg' alt="photo">
+                            <img src='img/game_5_big.jpg' alt="Обложка для игры №5">
                             </picture>
                     </div>
                     <div class="card-game__content game">         
@@ -178,7 +178,7 @@
                         <picture>
                             <source media="(max-width: 767px)" srcset='img/game_6_mob.jpg'>
                             <source media="(min-width: 768px)" srcset='img/game_6_big.jpg'>
-                            <img src='img/game_6_big.jpg' alt="photo">
+                            <img src='img/game_6_big.jpg' alt="Обложка для игры №6">
                             </picture>
                     </div>
                     <div class="card-game__content ">
@@ -197,5 +197,6 @@
     <footer class="page-footer">
         <p class="page-footer__text">Все права защищены</p>
     </footer> 
+    <script src="script.js"></script>
 </body>
 </html>
