@@ -3,10 +3,92 @@
 
 @media (max-width: 768px){
   .center{
-    padding-left: calc(50% - 200px);
-    padding-right: calc(50% - 200px);
+    padding-left: calc(50% - 180px);
+    padding-right: calc(50% - 180px);
    }
- }
+
+   .heading {
+    font-size: $fondMobHeadingSize;
+    line-height: 48px;
+    text-align: center;
+   }
+
+   .description {
+    font-size: $fondSize;
+    line-height: 20px;
+    text-align: center;
+   }
+
+   span {
+    font-size: $fondSize;
+   }
+
+   .game-box {
+     padding-top: 48px;
+     padding-bottom: 48px;    
+   }
+  
+   .game-list{
+    margin-top: 48px;
+    gap: 24px;
+   }
+  
+   .card-game{ 
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+
+     &__cover{
+      height: 284px;
+      width: 100%;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+ 
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;  
+       }
+      }
+
+     &_number, &_quiz
+      {
+     height: 528px; 
+      }
+
+     &_text,  &_math
+      {
+      height:  567px;  
+      }
+
+     &_rock
+      {
+      height:  606px;
+      }
+
+     &_color
+     {
+      height:  626px;
+     }
+  
+     &__content{
+       padding-top: 29px;
+       padding-bottom: 29px;
+       width: 100%;   
+     }
+
+    }
+
+   .page-footer{
+    padding-bottom: 40px;
+    padding-top: 40px;
+  
+     &__text{
+     font-size: $fondSize;
+     }
+    }
+  }
 
 @media (max-width: 376px)
 
@@ -15,4 +97,8 @@
     padding-left: calc(50% - 170px);
     padding-right: calc(50% - 170px);
    }
+
 }
+
+  
+   
