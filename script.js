@@ -1,5 +1,5 @@
 
-/Функция нахождения рандомного числа/
+//Функция нахождения рандомного числа
 const getRandomInteger = (a, b) => {
     const lower = Math.ceil(Math.min(a, b));
     const upper = Math.floor(Math.max(a, b));
@@ -8,7 +8,7 @@ const getRandomInteger = (a, b) => {
   };
 
 
-/Код к игре №1/
+//Код к игре №1
 const guessNumber = (randomInteger) => {
 
     let answer = prompt('Угадайте число (или нажмите Отмена для выхода)');
@@ -31,7 +31,7 @@ const guessNumber = (randomInteger) => {
 
 };
 
-/Код к игре №2/
+//Код к игре №2
 
 const operations = ['+', '-', '*', '/'];
 
@@ -57,3 +57,60 @@ if (+userAnswer===operationResult){
 }
 }
   
+//Код к игре №3
+
+userText = '';
+const reverUserText = () => {
+  
+  let userText = prompt ('Введите текст');
+  
+  let reverseText = userText.split('').reverse().join('');
+  
+  alert(reverseText);
+};
+
+
+
+//Код к игре №4
+const quiz = [
+  {
+      question: "Какой цвет неба?",
+      options: ["1. Красный", "2. Синий", "3. Зеленый"],
+      correctAnswer: 2 // номер правильного ответа
+  },
+  {
+      question: "Сколько дней в неделе?",
+      options: ["1. Шесть", "2. Семь", "3. Восемь"],
+      correctAnswer: 2
+  },
+  {
+      question: "Сколько у человека пальцев на одной руке?",
+      options: ["1. Четыре", "2. Пять", "3. Шесть"],
+      correctAnswer: 2
+  }
+];
+
+let correctAnswer = 0;
+
+let createQuizQuestions = () => {
+  
+  for (let index = 0; index < quiz.length; index++) {
+
+    let userAnswer = prompt(`Ответьте на вопрос: " ${quiz[index].question}"
+    Варианты ответов: ${quiz[index].options}
+    (Для выхода : нажмите "Отмена")`);
+    
+        if (userAnswer === null) {
+          alert('Вы отказались от ввода');
+          break;
+        } 
+    
+          if (+userAnswer === quiz[index].correctAnswer){
+          correctAnswer++
+          
+        } 
+    }
+    
+    alert (`Количество верных ответов: ${correctAnswer}`);
+}
+
