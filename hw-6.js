@@ -12,8 +12,12 @@ for (let i=0; i<numbersArray.length; i++){
 // Задание 2
 let numbersArray1 = [1, 5, 4, 10, 0, 3];
 
-let isContains = numbersArray1.includes(4); 
-
+for (let i=0; i<numbersArray1.length; i++){
+  if (numbersArray[i]===4){
+    console.log (numbersArray[i]);
+      break
+  }
+}
 
 // Задание 3
 let numbersArray2 = [1, 3, 5, 10, 20];
