@@ -33,35 +33,20 @@ const guessNumber = (randomInteger) => {
 
 /Код к игре №2/
 
+const operations = ['+', '-', '*', '/'];
+
+const calculate = (a, operation, b) => {
+  const func = new Function('a', 'b', `return a ${operation} b;`);
+  return func(a, b);
+};
+
 const getUserAnswer = ( randomInteger1, randomInteger2, randomIndex) => {
 
-let userAnswer; 
-let operationResult; 
- 
-    switch(randomIndex) {
-        case 1: 
-        userAnswer = prompt(`Сколько будет ${randomInteger1} + ${randomInteger2}? Напишите ответ`);
-        operationResult = randomInteger1 + randomInteger2;
-          break;
-      
-          case 2: 
-          userAnswer = prompt(`Сколько будет ${randomInteger1} - ${randomInteger2}? Напишите ответ`);
-          operationResult = randomInteger1 - randomInteger2;
-            break;
-    
-            case 3: 
-            userAnswer = prompt(`Сколько будет ${randomInteger1} * ${randomInteger2}? Напишите ответ`);
-        operationResult = randomInteger1 * randomInteger2;
-          break;
-    
-          case 4: 
-          userAnswer = prompt(`Сколько будет ${randomInteger1} / ${randomInteger2}? Напишите ответ`);
-        operationResult = randomInteger1 / randomInteger2;
-          break;
-      }
+const userAnswer = prompt(`Сколько будет ${randomInteger1}${operations[randomIndex]}${randomInteger2}? Напишите ответ`);
+const operationResult = calculate(randomInteger1, operations[randomIndex], randomInteger2);
 
 
-if (userAnswer==operationResult){
+if (+userAnswer===operationResult){
 
   alert('Молодец! Ответил правильно');
 
