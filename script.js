@@ -114,3 +114,69 @@ let createQuizQuestions = () => {
     alert (`Количество верных ответов: ${correctAnswer}`);
 }
 
+
+//Код к игре №5
+
+
+
+const createContantGame = () => {
+
+  let userGameChoice = prompt('Что выберите: КАМЕНЬ, НОЖНИЦЫ или БУМАГА?');
+  userGameChoice = userGameChoice.trim().toUpperCase();
+  
+  const gamesVariants = ['КАМЕНЬ', 'НОЖНИЦЫ', 'БУМАГА'];
+  
+  const getRandomIndex = (length) => Math.floor(Math.random() * length);
+  
+  let computerGameChoice = gamesVariants[getRandomIndex(3)];
+  
+  let message;
+  
+  const getMessageResultGame = (playerChoice1, playerChoice2) => {
+   
+      let winMessage = 'Вы выиграли!';
+      let lostMessage = 'Вы проиграли!'; 
+      let drawMessage = 'Ничья!';
+  
+      if (playerChoice1 === playerChoice2) {
+          return drawMessage;
+      }
+   
+      switch (playerChoice1) {
+          case 'КАМЕНЬ':
+              if (playerChoice2 === 'НОЖНИЦЫ') {
+                  message = winMessage;
+              } else {
+                  message = lostMessage;
+              }             
+              break;
+  
+          case 'НОЖНИЦЫ':
+              if (playerChoice2 === 'БУМАГА') {
+                  message = winMessage;
+              } else {
+                  message = lostMessage;
+              }   
+              break;
+  
+          case 'БУМАГА':
+              if (playerChoice2 === 'КАМЕНЬ') {
+                  message = winMessage;
+              } else {
+                  message = lostMessage;
+              }   
+              break;
+  
+          default:
+              message = "Некорректный выбор. Пожалуйста, выберите КАМЕНЬ, НОЖНИЦЫ или БУМАГА.";
+              break;
+      }
+  
+      return message;
+  }
+  
+  alert( `Вы выбрали : ${userGameChoice}. Компьютер выбрал : ${computerGameChoice}`)
+  alert(getMessageResultGame(userGameChoice, computerGameChoice))
+
+
+}
