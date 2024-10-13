@@ -10,11 +10,28 @@ const people = [
  console.log(arraySortedAge);
 
 //Задание 2
-const numbers = [3, -4, 1, 9];
+function isPositive(number) {
+    return number >= 0;
+    };
 
-const positiveNumbersArray = numbers.filter((number) => number > 0);
+function isMale(person) {
+    return person.gender === 'male'
+    };
 
-console.log(positiveNumbersArray);
+function filter(arr , filterRules) {
+    
+const result = []; 
+
+    arr.forEach(element => {
+        if (filterRules(element)) {
+        result.push(element);  
+    }
+    });
+
+    return result;
+    }
+    
+console.log(filter([3, -4, 1, 9], isPositive));
 
 const people1 = [
     {name: 'Глеб', gender: 'male'},
@@ -23,7 +40,7 @@ const people1 = [
     {name: 'Оксана', gender: 'female'}
  ];
 
-const arrayFilteredByGender = people1.filter((person) => person.gender === 'male')
+ console.log(filter(people1, isMale));
 
 //Задание 3
 const logCurrentDate = () => {
