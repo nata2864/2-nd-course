@@ -113,7 +113,7 @@
                     <div class="card-game__content game">            
                         <h3 class="game__name">Угадай число</h3>
                         <p class="game__description">Попробуй угадать случайное число от 1 до 100.</p>
-                        <a onclick="guessNumber(getRandomInteger(1,100))" class="button button_mob">Играть!</a>
+                        <a onclick="guessNumber(getRandomInteger())" class="button button_mob">Играть!</a>
                     </div>      
                 </li>
                 <li class="card-game card-game_math" id="game2">
@@ -127,7 +127,7 @@
                     <div class="card-game__content game">
                         <h3 class="game__name">Простая арифметика</h3>
                         <p class="game__description">Попробуй решить простые арифметические задачи.</p>
-                        <a onclick="getUserAnswer(getRandomInteger(1,100),getRandomInteger(1,100),getRandomInteger(1,4))" class="button button_mob">Играть!</a>
+                        <a onclick="getUserAnswer()" class="button button_mob">Играть!</a>
                     </div>                                
                 </li>
                 <li class="card-game card-game_text" id="game3">
@@ -186,8 +186,8 @@
                             <h3 class="game__name">Генератор случайных цветов</h3>
                             <p class="game__description">Игра, в которой при клике на кнопку фон страницы меняется на случайный.</p>
                         </div>        
-                        
-                        <a class="button button_mob">Играть!</a>
+                     
+                        <a onclick="changeBackgroundColor()" class="button button_mob">Играть!</a>
                     </div>                               
                 </li>
             </ul>
