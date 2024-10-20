@@ -66,11 +66,7 @@ span {
   color: #202027;
   outline: thin solid black;
 }
-.button:active {
-  background-color: gray;
-  color: #FFFFFF;
-  border: none;
-}
+
 
 .top {
   background: url("img/Обложка_top.png");
